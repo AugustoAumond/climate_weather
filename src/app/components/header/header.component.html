@@ -1,0 +1,24 @@
+<header class="h-40 bg-sky-900  flex items-start justify-evenly font-mono">
+    <div class="bg-sky-700 flex-1 flex items-center justify-evenly">
+        <div class=" h-24 max-w-screen-2xl w-full flex items-center justify-evenly gap-4 px-4 text-white">
+            <div class="none md:flex">
+                <span class="size-12">
+                    <fa-icon [icon]="faCloud" class="size-8"></fa-icon>
+                </span>
+            </div>
+        
+            <div class="flex h-10 w-5/6 flex-1 items-center justify-start rounded-lg gap-4 p-4">
+                <input (ngModelChange)="city" [(ngModel)]="city" class="flex flex-1 p-2 rounded-lg text-sm md:text-lg text-black" type="text" placeholder="Escolha a cidade">
+                
+                <button (click)="getCoords()" class="border-2 p-2 rounded-lg hover:border-sky-500">
+                    <span class="text-sm md:text-lg">
+                        Confirmar Cidade
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+

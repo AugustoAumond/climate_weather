@@ -1,0 +1,7 @@
+
+<router-outlet class="h-full w-full bg-black">
+  <div class="h-full m-auto flex flex-col gap-16">
+    <app-header (citySearch)="getCoords($event)"></app-header>
+    <app-main-container [city]="city" [utilizableDatas]="utilizableDatas"></app-main-container>
+  </div>
+<router-outlet />

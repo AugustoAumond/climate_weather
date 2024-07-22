@@ -1,5 +1,5 @@
 
-<router-outlet class="h-full w-full bg-black">
+<router-outlet class="h-full w-full bg-black" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <div class="h-full m-auto flex flex-col gap-16">
     <app-header (citySearch)="getCoords($event)"></app-header>
     <app-main-container [city]="city" [utilizableDatas]="utilizableDatas"></app-main-container>

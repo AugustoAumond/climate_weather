@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     .subscribe({
       next: (data: any) => {
         this.city = {city: data[0].name, state: data[0].state};
+        
 
         axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=-22.9110137&lon=-43.2093727&lang=pt_br&appid=45f8d6a48ac2279c8954243037bb47b8&units=metric`).
         then ((element)=>{

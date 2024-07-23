@@ -14,7 +14,6 @@ export interface cityProps {
 export interface datasUtilizableProps {
 weather: string
 main: string
-img: string
 temp: number
 feeks_like: number
 temp_max: number

@@ -1,0 +1,41 @@
+<div class="flex items-center justify-evenly flex-col gap-5">
+    <div class="flex items-center gap-2 text-sky-800 text-4xl">
+        <strong class="text-center">{{utilizableDatas?.weather?.toUpperCase()}} </strong>
+    </div>
+
+    <div class="text-orange-500 h-24">
+        @if (utilizableDatas?.main === 'Clear') {
+            <fa-icon class="text-orange-500 h-24 icon-weather" [icon]="Sun"></fa-icon> 
+        } 
+
+        @if (utilizableDatas?.main === 'Clouds') {
+            <fa-icon class="text-slate-400 h-24 icon-weather" [icon]="Cloud"></fa-icon> 
+        } 
+
+        @if (utilizableDatas?.main === 'Rain') {
+            <fa-icon class="text-sky-800 h-24 icon-weather" [icon]="Rain"></fa-icon> 
+        } 
+        
+        @if (utilizableDatas?.main === 'Thunderstorm') {
+            <fa-icon class="text-red-950 h-24 icon-weather" [icon]="Thunderstorm"></fa-icon> 
+        }  
+    </div>                    
+
+    <div class="flex items-center gap-2 text-sky-600 text-4xl">
+        @if (utilizableDatas?.main === 'Clear') {
+            <strong class="text-orange-500 h-24">  {{utilizableDatas?.temp}}°C </strong> 
+        } 
+
+        @if (utilizableDatas?.main === 'Clouds') {
+            <strong class="text-slate-400  h-24">  {{utilizableDatas?.temp}}°C </strong> 
+        } 
+
+        @if (utilizableDatas?.main === 'Rain') {
+            <strong class="text-sky-800  h-24">  {{utilizableDatas?.temp}}°C </strong> 
+        }  
+
+        @if (utilizableDatas?.main === 'Thunderstorm') {
+            <strong class="text-red-950  h-24">  {{utilizableDatas?.temp}}°C </strong> 
+        }  
+    </div>
+</div>

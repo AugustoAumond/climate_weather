@@ -1,0 +1,58 @@
+<div class="flex items-center justify-center gap-3 flex-wrap ">
+    <div class="w-[300px] border-opacity-75  border-2 border-sky-800 rounded-lg flex items-center justify-between p-2">
+        <div class="flex items-center gap-4 h-14 text-sky-800 text-lg font-bold">
+            TEMPERATURA
+        </div>
+
+        <div class="flex items-center gap-1 h-12 text-sky-800">
+            <div class="flex items-baseline gap-2 p-2">
+                <fa-icon class="text-sky-600 size-3" [icon]="Low"></fa-icon>
+                <div class="text-sky-600"><strong>{{utilizableDatas?.temp_min}}°C</strong></div>
+            </div>
+
+            <div class="flex items-baseline gap-3.5 p-2">
+                <fa-icon class="text-orange-600 size-3" [icon]="Hight"></fa-icon>
+                <div class="text-orange-600"><strong>{{utilizableDatas?.temp_max}}°C</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[300px] border-opacity-75 border-2 border-sky-800 rounded-lg flex items-center justify-between p-2">
+        <div class="flex items-center gap-4 h-14 text-sky-800 text-lg font-bold">
+            SENSAÇÃO
+        </div>
+
+        <div class="flex items-center gap-1 h-12 text-sky-800">
+            <div class="flex items-baseline gap-3 p-2">
+                <fa-icon class="text-sky-800 size-3" [icon]="Temperature"></fa-icon>
+                <div class="text-sky-600"><strong>{{utilizableDatas?.temp_min}}°C</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[300px] border-opacity-75  border-2 border-sky-800 rounded-lg flex items-center justify-between p-2">
+        <div class="flex items-center gap-4 h-14 text-sky-800 text-lg font-bold">
+            VENTO
+        </div>
+
+        <div class="flex items-center gap-1 h-12 text-sky-800">
+            <div class="flex items-baseline gap-7 p-2">
+                <fa-icon class="text-sky-800 size-2" [icon]="Wind"></fa-icon>
+                <div class="text-sky-600"><strong>{{utilizableDatas?.wind}}Km/h</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[300px] border-opacity-75  border-2 border-sky-800 rounded-lg flex items-center justify-between p-2">
+        <div class="flex items-center gap-4 h-14 text-sky-800 text-lg font-bold">
+            UMIDADE
+        </div>
+
+        <div class="flex items-center gap-1 h-12 text-sky-800">
+            <div class="flex items-baseline gap-7 p-2">
+                <fa-icon class="text-sky-800 size-2" [icon]="Drop"></fa-icon>
+                <div class="text-sky-600"><strong>{{utilizableDatas?.humidity}}%</strong></div>
+            </div>
+        </div>
+    </div>
+</div>
